@@ -1,0 +1,17 @@
+@import 'normalize-scss/sass/normalize/_import-now.scss';
+@import './layout';
+@import './public';
+
+.scene {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  margin: 40px;
+
+  >.panel {
+    width: 100%;
+    height: 100%;
+    background-color: #ff0000;
+    transform: perspective(600px) rotateY(45deg);
+  }
+}

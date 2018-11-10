@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/littlehorseboy/css-3d-transforms#readme",
   "dependencies": {
-    "normalize-scss": "^7.0.1"
+    "normalize-scss": "^7.0.1",
+    "vue": "^2.5.17"
   },
   "devDependencies": {
     "autoprefixer": "^9.3.1",

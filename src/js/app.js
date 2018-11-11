@@ -5,6 +5,7 @@ new Vue({
   el: '#app',
   data: {
     chapter: 'one',
+    chapterThreeOpen: true,
   },
   methods: {
     clickCard: function () {
@@ -13,7 +14,7 @@ new Vue({
       } else if (this.chapter === 'two') {
         this.chapter = 'three';
       } else if (this.chapter === 'three') {
-        this.chapter = 'one';
+        this.chapterThreeOpen = !this.chapterThreeOpen;
       }
     },
   },

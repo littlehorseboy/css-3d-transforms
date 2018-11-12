@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/littlehorseboy/css-3d-transforms#readme",
   "dependencies": {
+    "animejs": "^2.2.0",
     "normalize-scss": "^7.0.1",
     "vue": "^2.5.17"
   },

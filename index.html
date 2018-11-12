@@ -11,7 +11,7 @@
 <body>
   <div id="app">
     <div @click="clickCard" class="scene">
-      <div class="panel" :class="{ one: chapter === 'one', two: chapter === 'two', top: chapter === 'three', four: !chapterThreeOpen }">
+      <div class="panel" :class="{ one: chapter === 'one', two: chapter === 'two', top: chapter === 'three' }">
         <div class="front">
           上面
         </div>
@@ -22,10 +22,13 @@
       <div class="panel" :class="{ one: chapter === 'one', two: chapter === 'two', bottom: chapter === 'three' }">
         下面
       </div>
-    </div>
-      <div v-if="chapter === 'three' && chapterThreeOpen">
-        <img src="src/assets/images/c_gift.png">
+      <div class="paper" v-if="chapter === 'three'">
+          <img ref="paper" src="src/assets/images/d_paper.png">
       </div>
+      <div class="gift" v-if="chapter === 'three'">
+        <img ref="gift" src="src/assets/images/c_gift.png">
+      </div>
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </body>
